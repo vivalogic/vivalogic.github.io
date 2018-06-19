@@ -7,15 +7,13 @@ function removeHash() {
 		history.replaceState("", document.title, loc.pathname + loc.search);
 	else {
 		// Prevent scrolling by storing the page's current scroll offset
-		
 		// zakomentoval jsem scroll
 		// scrollV = document.body.scrollTop;
 		// scrollH = document.body.scrollLeft;
 
 		loc.hash = "";
 
-		// Restore the scroll offset, should be flicker free
-		
+		// Restore the scroll offset, should be flicker free	
 		// zakomentoval jsem scroll
 		// document.body.scrollTop = scrollV;
 		// document.body.scrollLeft = scrollH;
@@ -67,10 +65,10 @@ function getQuizResult() {
 $('#quiz_intro').on('click', '.btn', function(){
 	$('#quiz_intro').fadeOut(300);
 	$('#quiz_1').fadeIn(300);
-	ga('send', 'pageview', location.pathname, {
-		title: 'quiz_q1'
-	});
-	ga('send', 'event', 'page-displayed', 'quiz_q1');
+//	ga('send', 'pageview', location.pathname, {
+//		title: 'quiz_q1'
+//	});
+//	ga('send', 'event', 'page-displayed', 'quiz_q1');
 	return false;
 });
 
@@ -103,10 +101,10 @@ $('.quiz-question').on('click', '.controls .btn-next', function(){
     opacity: 1
 	});
 
-	ga('send', 'pageview', location.pathname, {
-		title: 'quiz_q' + (quiz.data('quiz') + 1)
-	});
-	ga('send', 'event', 'page-displayed', 'quiz_q' + (quiz.data('quiz') + 1));
+//	ga('send', 'pageview', location.pathname, {
+//		title: 'quiz_q' + (quiz.data('quiz') + 1)
+//	});
+//	ga('send', 'event', 'page-displayed', 'quiz_q' + (quiz.data('quiz') + 1));
 
 	return false;
 });
@@ -126,10 +124,10 @@ $('.quiz-question').on('click', '.controls .btn-prev', function(){
     opacity: 1
 	});
 
-	ga('send', 'pageview', location.pathname, {
-		title: 'quiz_q' + (quiz.data('quiz') - 1)
-	});
-	ga('send', 'event', 'page-displayed', 'quiz_q' + (quiz.data('quiz') - 1));
+//	ga('send', 'pageview', location.pathname, {
+//		title: 'quiz_q' + (quiz.data('quiz') - 1)
+//	});
+//	ga('send', 'event', 'page-displayed', 'quiz_q' + (quiz.data('quiz') - 1));
 
 	return false;
 });
@@ -139,10 +137,10 @@ $('.quiz-question').on('click', '.controls .btn-finish', function(){
 	quiz.fadeOut(200);
 	$('#quiz_answer_' + getQuizResult()).fadeIn(200);
 
-	ga('send', 'pageview', location.pathname, {
-		title: 'quiz_result'
-	});
-	ga('send', 'event', 'page-displayed', 'quiz_result');
+//	ga('send', 'pageview', location.pathname, {
+//		title: 'quiz_result'
+//	});
+//	ga('send', 'event', 'page-displayed', 'quiz_result');
 
 	return false;
 });
