@@ -65,10 +65,10 @@ function getQuizResult() {
 $('#quiz_intro').on('click', '.btn', function(){
 	$('#quiz_intro').fadeOut(300);
 	$('#quiz_1').fadeIn(300);
-	ga('send', 'pageview', location.pathname, {
-		title: 'quiz_q1'
-	});
-	ga('send', 'event', 'page-displayed', 'quiz_q1');
+//	ga('send', 'pageview', location.pathname, {
+//		title: 'quiz_q1'
+//	});
+//	ga('send', 'event', 'page-displayed', 'quiz_q1');
 	return false;
 });
 
