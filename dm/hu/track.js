@@ -4,7 +4,6 @@ $("a[data-track='btn_quiz']").on('click', function () {
         'gaVirtualPageviewUrl': '/dekorkozmetika/oktober-true-match/test/testintroduction',
         'gaVirtualPageviewTitle': '‘L’Oreal | Test step 01 – Test introduction'
     });
-
 });
 
 $("#quiz_1 a[data-track='quiz_next']").on('click', function () {
